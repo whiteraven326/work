@@ -1,0 +1,70 @@
+object Form1: TForm1
+  Left = 819
+  Height = 240
+  Top = 456
+  Width = 382
+  Caption = 'Примеры работы с подпрограммами'
+  ClientHeight = 240
+  ClientWidth = 382
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 123
+    Caption = 'Введите любое число:'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 152
+    Height = 23
+    Top = 8
+    Width = 160
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 112
+    Height = 25
+    Top = 48
+    Width = 160
+    Caption = 'Пример удвоения №1'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 112
+    Height = 24
+    Top = 88
+    Width = 159
+    Caption = 'Пример удвоения №2'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 112
+    Height = 24
+    Top = 128
+    Width = 159
+    Caption = 'Пример удвоения №3'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 112
+    Height = 25
+    Top = 168
+    Width = 159
+    Caption = 'Пример удвоения №4'
+    TabOrder = 4
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 112
+    Height = 23
+    Top = 208
+    Width = 161
+    Caption = 'Пример удвоения №5'
+    TabOrder = 5
+    OnClick = Button5Click
+  end
+end

@@ -1,0 +1,37 @@
+object fMain: TfMain
+  Cursor = crNone
+  Left = 675
+  Height = 273
+  Top = 352
+  Width = 393
+  BorderStyle = bsNone
+  Caption = 'fMain'
+  ClientHeight = 273
+  ClientWidth = 393
+  Color = clBlack
+  DesignTimePPI = 120
+  OnKeyPress = FormKeyPress
+  LCLVersion = '3.2.0.0'
+  WindowState = wsMaximized
+  object lClock: TLabel
+    Left = 90
+    Height = 89
+    Top = 130
+    Width = 294
+    Caption = '00:00:00'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clYellow
+    Font.Height = -80
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    Transparent = False
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 20
+    Top = 270
+  end
+end
