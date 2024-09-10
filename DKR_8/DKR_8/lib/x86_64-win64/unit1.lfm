@@ -1,0 +1,283 @@
+object Form1: TForm1
+  Left = 740
+  Height = 521
+  Top = 393
+  Width = 885
+  BorderStyle = bsSingle
+  Caption = 'Калькулятор процентов._.'
+  ClientHeight = 521
+  ClientWidth = 885
+  Color = 14147220
+  Constraints.MaxHeight = 521
+  Constraints.MaxWidth = 885
+  Constraints.MinHeight = 452
+  Constraints.MinWidth = 748
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object edtPrincipal: TEdit
+    AnchorSideRight.Control = edtRate
+    Left = 24
+    Height = 34
+    Top = 64
+    Width = 224
+    Anchors = []
+    AutoSize = False
+    BorderSpacing.Right = 22
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 10
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 0
+    OnKeyPress = edtPrincipalKeyPress
+  end
+  object edtRate: TEdit
+    AnchorSideRight.Control = edtTime
+    AnchorSideBottom.Control = memResult
+    Left = 24
+    Height = 34
+    Top = 176
+    Width = 224
+    Anchors = []
+    AutoSize = False
+    BorderSpacing.Right = 31
+    BorderSpacing.Bottom = 24
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 10
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 1
+    OnKeyPress = edtRateKeyPress
+  end
+  object edtTime: TEdit
+    Left = 24
+    Height = 34
+    Top = 296
+    Width = 224
+    Anchors = []
+    AutoSize = False
+    BorderSpacing.Bottom = 20
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    MaxLength = 10
+    NumbersOnly = True
+    ParentFont = False
+    TabOrder = 2
+    OnKeyPress = edtTimeKeyPress
+  end
+  object btnCalculate: TButton
+    Left = 344
+    Height = 51
+    Top = 448
+    Width = 200
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Посчитать'
+    Color = 4768310
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnCalculateClick
+  end
+  object cbxCalculationType: TComboBox
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Side = asrCenter
+    AnchorSideBottom.Side = asrCenter
+    Left = 630
+    Height = 39
+    Top = 18
+    Width = 226
+    Anchors = []
+    AutoSize = False
+    DoubleBuffered = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ItemHeight = 31
+    ItemWidth = 20
+    ParentDoubleBuffered = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 4
+  end
+  object memResult: TMemo
+    AnchorSideRight.Control = cbxCalculationType
+    AnchorSideBottom.Control = btnCalculate
+    Left = 320
+    Height = 106
+    Top = 72
+    Width = 536
+    Anchors = []
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 5
+  end
+  object btnClose: TBitBtn
+    Left = 640
+    Height = 51
+    Top = 448
+    Width = 200
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Выход'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ModalResult = 3
+    OnClick = btnCloseClick
+    ParentFont = False
+    TabOrder = 6
+  end
+  object LabelPrincipal: TLabel
+    Left = 24
+    Height = 32
+    Top = 16
+    Width = 256
+    Anchors = []
+    AutoSize = False
+    BorderSpacing.Bottom = 26
+    Caption = 'Начальная сумма (руб.)'
+    Color = 14147220
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    Transparent = False
+  end
+  object LabelRate: TLabel
+    AnchorSideBottom.Control = edtRate
+    Left = 24
+    Height = 30
+    Top = 128
+    Width = 256
+    Anchors = []
+    AutoSize = False
+    BorderSpacing.Bottom = 21
+    Caption = 'Процентная ставка (%)'
+    Color = 14147220
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object LabelTime: TLabel
+    AnchorSideBottom.Control = edtTime
+    Left = 24
+    Height = 32
+    Top = 240
+    Width = 202
+    Anchors = []
+    AutoSize = False
+    BorderSpacing.Bottom = 19
+    Caption = 'Время (мес.)'
+    Color = 14147220
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object LabelProcent: TLabel
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Side = asrCenter
+    AnchorSideBottom.Control = cbxCalculationType
+    AnchorSideBottom.Side = asrCenter
+    Left = 320
+    Height = 29
+    Top = 19
+    Width = 297
+    Anchors = []
+    AutoSize = False
+    BorderSpacing.Bottom = 12
+    Caption = 'Выберите тип процентов!'
+    Color = 14147220
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object btnClear: TButton
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Side = asrCenter
+    AnchorSideBottom.Side = asrCenter
+    Left = 48
+    Height = 51
+    Top = 448
+    Width = 200
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = 'Очистить'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -20
+    Font.Name = 'Segoe Print'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = btnClearClick
+  end
+  object Image1: TImage
+    Left = 320
+    Height = 231
+    Top = 193
+    Width = 536
+  end
+  object Image2: TImage
+    Left = 320
+    Height = 232
+    Top = 194
+    Width = 536
+  end
+end

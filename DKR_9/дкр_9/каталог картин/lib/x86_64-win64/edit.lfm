@@ -1,0 +1,227 @@
+object fEdit: TfEdit
+  Left = 1134
+  Height = 591
+  Top = 241
+  Width = 458
+  BorderStyle = bsDialog
+  Caption = 'Редактор данных'
+  ClientHeight = 591
+  ClientWidth = 458
+  Color = 8845759
+  DesignTimePPI = 120
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Name = 'Segoe Script'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object nameK: TLabel
+    Left = 8
+    Height = 23
+    Top = 8
+    Width = 249
+    Caption = 'Укажите название картины:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object eName: TEdit
+    Left = 8
+    Height = 31
+    Top = 33
+    Width = 397
+    TabOrder = 0
+  end
+  object nameH: TLabel
+    Left = 8
+    Height = 23
+    Top = 75
+    Width = 183
+    Caption = 'Укажите художника:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object eNameH: TEdit
+    Left = 8
+    Height = 31
+    Top = 100
+    Width = 219
+    TabOrder = 1
+  end
+  object Style: TLabel
+    Left = 8
+    Height = 23
+    Top = 142
+    Width = 142
+    Caption = 'Выберите стиль:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object CBStyle: TComboBox
+    Left = 8
+    Height = 31
+    Top = 167
+    Width = 249
+    ItemHeight = 23
+    ItemIndex = 0
+    Items.Strings = (
+      'Абстрактное искусство'
+      'Барокко'
+      'Импрессионизм'
+      'Конструктивизм'
+      'Кубизм'
+      'Минимализм'
+      'Оп-арт'
+      'Поп-арт'
+      'Постимпрессионизм'
+      'Постмодернизм'
+      'Ранний Ренессанс'
+      'Реализм'
+      'Регионализм'
+      'Ренессанс'
+      'Рококо'
+      'Романтизм'
+      'Сюрреализм'
+      'Фовизм'
+      'Экспрессионизм'
+    )
+    Style = csDropDownList
+    TabOrder = 2
+    Text = 'Абстрактное искусство'
+  end
+  object bSave: TBitBtn
+    Left = 16
+    Height = 38
+    Top = 528
+    Width = 197
+    Caption = 'Сохранить данные'
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object bCancel: TBitBtn
+    Left = 248
+    Height = 38
+    Top = 528
+    Width = 191
+    Caption = 'Не сохранять'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object Tehn: TLabel
+    Left = 8
+    Height = 23
+    Top = 212
+    Width = 165
+    Caption = 'Выберите технику:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object CBTehn: TComboBox
+    Left = 8
+    Height = 31
+    Top = 240
+    Width = 216
+    ItemHeight = 23
+    ItemIndex = 0
+    Items.Strings = (
+      '"Сухая кисть"'
+      'Алла прима'
+      'Декоративная живопись'
+      'Затирка'
+      'Импасто'
+      'Импрессионистическая техника'
+      'Лессировка'
+      'Мазковая техника'
+      'Масляная живопись'
+      'Письмо по форме'
+      'Темпера'
+      'Фреска'
+    )
+    Style = csDropDownList
+    TabOrder = 5
+    Text = '"Сухая кисть"'
+  end
+  object eYear: TEdit
+    Left = 8
+    Height = 31
+    Top = 320
+    Width = 208
+    TabOrder = 6
+    OnKeyPress = eYearKeyPress
+  end
+  object Year: TLabel
+    Left = 8
+    Height = 23
+    Top = 288
+    Width = 194
+    Caption = 'Укажите год создания:'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Place: TLabel
+    Left = 8
+    Height = 23
+    Top = 360
+    Width = 439
+    Caption = 'Нахождение картины на данный момент (в музее):'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object stoim: TLabel
+    Left = 8
+    Height = 23
+    Top = 440
+    Width = 346
+    Caption = 'Укажите стоимость картины (млн. $):'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Name = 'Segoe Script'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object eStoim: TEdit
+    Left = 8
+    Height = 31
+    Top = 472
+    Width = 208
+    TabOrder = 7
+    OnKeyPress = eStoimKeyPress
+  end
+  object CBPlace: TComboBox
+    Left = 8
+    Height = 31
+    Top = 392
+    Width = 125
+    ItemHeight = 23
+    ItemIndex = 0
+    Items.Strings = (
+      'Да'
+      'Нет'
+    )
+    Style = csDropDownList
+    TabOrder = 8
+    Text = 'Да'
+  end
+end

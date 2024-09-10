@@ -1,0 +1,77 @@
+object fMain: TfMain
+  Left = 481
+  Height = 417
+  Top = 151
+  Width = 1305
+  BorderStyle = bsDialog
+  Caption = 'Каталог картин'
+  ClientHeight = 417
+  ClientWidth = 1305
+  Color = 9629101
+  DesignTimePPI = 120
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Name = 'Segoe Script'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 24
+    Top = 0
+    Width = 1305
+    Align = alTop
+    Color = 6860904
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+  end
+  object SG: TStringGrid
+    Left = 0
+    Height = 351
+    Top = 66
+    Width = 1305
+    Align = alBottom
+    Color = 8910256
+    ColCount = 7
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = bEditClick
+  end
+  object bAdd: TSpeedButton
+    Left = 16
+    Height = 27
+    Top = 32
+    Width = 157
+    Caption = 'Добавить данные'
+    OnClick = bAddClick
+  end
+  object bDel: TSpeedButton
+    Left = 408
+    Height = 27
+    Top = 32
+    Width = 157
+    Caption = 'Удалить '
+    Color = 16315303
+    OnClick = bDelClick
+  end
+  object bEdit: TSpeedButton
+    Left = 192
+    Height = 27
+    Top = 32
+    Width = 188
+    Caption = 'Редактировать '
+    OnClick = bEditClick
+  end
+  object bSort: TSpeedButton
+    Left = 584
+    Height = 27
+    Top = 32
+    Width = 197
+    Caption = 'Сортировать список'
+    OnClick = bSortClick
+  end
+end

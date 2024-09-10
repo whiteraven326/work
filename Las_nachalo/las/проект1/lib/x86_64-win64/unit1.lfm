@@ -1,0 +1,65 @@
+object Form1: TForm1
+  Left = 615
+  Height = 286
+  Top = 390
+  Width = 485
+  Caption = 'Form1'
+  ClientHeight = 286
+  ClientWidth = 485
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Height = -13
+  Font.Name = 'Century Schoolbook'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Font.Style = [fsBold, fsItalic]
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 40
+    Height = 25
+    Top = 24
+    Width = 418
+    Caption = 'Догадайтесь, кто сделал этот проект?'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clBlue
+    Font.Height = -21
+    Font.Name = 'Century Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 64
+    Height = 40
+    Top = 80
+    Width = 193
+    Caption = 'Щелкните здесь!'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Label2: TLabel
+    Left = 77
+    Height = 1
+    Top = 140
+    Width = 1
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'Century Schoolbook'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 336
+    Height = 29
+    Top = 240
+    Width = 113
+    Caption = 'Выход'
+    Kind = bkAbort
+    ModalResult = 3
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+end
